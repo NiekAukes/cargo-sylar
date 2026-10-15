@@ -11,7 +11,7 @@ use super::*;
 // cargo oxide new -- standalone project scaffolding
 // =========================================================================
 
-const GIT_REPO: &str = "https://github.com/NVlabs/cuda-oxide.git";
+const GIT_REPO: &str = "https://github.com/NVIDIA/cuda-rust.git";
 
 const RUST_TOOLCHAIN_TOML: &str = r#"[toolchain]
 channel = "nightly-2026-10-11"
