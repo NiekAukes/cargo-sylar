@@ -1,0 +1,6 @@
+# Matches cuda-oxide/rust-toolchain.toml in NVIDIA/cuda-rust. cargo-oxide
+# itself does not need rustc-dev; bump this together with upstream.
+[toolchain]
+channel = "1.99.1"
+components = ["rustfmt", "clippy"]
+profile = "minimal"

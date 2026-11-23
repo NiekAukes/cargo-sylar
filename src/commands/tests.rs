@@ -6672,6 +6672,7 @@ fn tilelib_artifacts_are_cleaned_between_builds() {
 /// program ran, and the two library markers to decide whether a `.tilelib`
 /// is required, instead of probing tileiras itself. The script and the
 /// command have to name the same text.
+#[cfg(any())] // fork: reads cuda-oxide/scripts/smoketest.sh, which only exists in the monorepo
 #[test]
 fn the_smoketest_greps_the_summary_markers_this_command_prints() {
     const SMOKETEST: &str = include_str!("../../../../scripts/smoketest.sh");
